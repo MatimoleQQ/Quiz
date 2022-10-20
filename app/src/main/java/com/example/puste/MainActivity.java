@@ -2,6 +2,7 @@ package com.example.puste;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,10 +15,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button sprawdzButton ; //Klasa button do tworzenia buttona
+        Button sprawdzButton; //Klasa button do tworzenia buttona
+
         sprawdzButton = findViewById(R.id.buttonSpr);
         // New View na przycisnieciu
         Button podpowiedzButton = findViewById(R.id.button2);
+        podpowiedzButton.setOnClickListener(view -> {
+            Intent intencja = new Intent(MainActivity.this,PodpowiedzActivity.class);
+
+            //Intencja jawna
+            //wiadomo skad dokąd
+            startActivity(intencja);
+        });
         sprawdzButton.setOnClickListener(view -> {
 
         sprawdz();
