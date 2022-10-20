@@ -56,5 +56,5 @@ public class Pytanie {
     public String getOdpowiedz() {
         return odpowiedz;
     }
-
+//4 pytania liczenie punktow i za cheaty zabieranie punktow
 }
