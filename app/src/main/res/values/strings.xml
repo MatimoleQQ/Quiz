@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Puste</string>
+    <string name="szczyt">Jaki szczyt jest widoczny na zdjeciu</string>
+    <string name="sprawdz">Sprawdz odpowiedz</string>
+    <string name="hint">Podpowiedź</string>
+    <string name="poprawne">Poprawna</string>
+    <string name="zle">Zla odpowiedz</string>
+</resources>
